@@ -19,7 +19,7 @@ export class LoginComponent {
     };
 
     // Make a POST request to your backend API
-    this.http.post('http://localhost:8080/register', userData).subscribe(
+    this.http.post('http://localhost:8080/sign-up', userData).subscribe(
       (response) => {
         // Handle success
         console.log('Registration successful', response);
@@ -30,4 +30,5 @@ export class LoginComponent {
       }
     );
   }
+
 }
