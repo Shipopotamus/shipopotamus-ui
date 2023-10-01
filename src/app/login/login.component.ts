@@ -18,15 +18,12 @@ export class LoginComponent {
       password: this.password
     };
 
-    // Make a POST request to your backend API
-    this.http.post('http://localhost:8080/register', userData).subscribe(
+    this.http.post('http://localhost:8080/sign-in', userData).subscribe(
       (response) => {
-        // Handle success
-        console.log('Registration successful', response);
+        console.log('Sign in successful', response);
       },
       (error) => {
-        // Handle error
-        console.error('Registration failed', error);
+        console.error('Sign in failed', error);
       }
     );
   }
