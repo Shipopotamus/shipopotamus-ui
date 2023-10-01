@@ -1,7 +1,46 @@
-.sign-in-component {
+.form-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px; /* Adjust the spacing between form groups */
+    max-width: 300px; /* Set a maximum width for the form */
+    width: 100%; /* Ensure the form takes up the available width */
+  }
+  
+  .label-input-group > * {
+    width: 100%; /* Make label and input span the full width */
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 12px 0; /* Adjust the vertical padding to your liking */
+    background-color: #007bff; /* Adjust the button's background color */
+    color: #fff; /* Adjust the button's text color */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center; /* Center the button text */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Adjust the button's hover color */
+  }
+  
